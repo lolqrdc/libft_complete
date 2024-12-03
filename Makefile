@@ -39,7 +39,7 @@ FTPUT_DIR = $(SRC_DIR)/ft_put/ft_putchar_fd.c \
 				$(SRC_DIR)/ft_put/ft_putnbr_fd.c \
 				$(SRC_DIR)/ft_put/ft_putstr_fd.c \
 
-FTSTR_DIR = $(SRC_DIR)/ft_str/ft_putstr_fd.c \
+FTSTR_DIR = $(SRC_DIR)/ft_str/ft_split.c
 				$(SRC_DIR)/ft_str/ft_strchr.c \
 				$(SRC_DIR)/ft_str/ft_strdup.c \
 				$(SRC_DIR)/ft_str/ft_striteri.c \
