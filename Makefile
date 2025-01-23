@@ -22,6 +22,7 @@ FTIS_DIR = $(SRC_DIR)/ft_is/ft_isalnum.c \
 			$(SRC_DIR)/ft_is/ft_isprint.c \
 
 FTTO_DIR = $(SRC_DIR)/ft_to/ft_atoi.c \
+			$(SRC_DIR)/ft_to/ft_atol.c \
 			$(SRC_DIR)/ft_to/ft_itoa.c \
 			$(SRC_DIR)/ft_to/ft_tolower.c \
 			$(SRC_DIR)/ft_to/ft_toupper.c \
@@ -39,7 +40,7 @@ FTPUT_DIR = $(SRC_DIR)/ft_put/ft_putchar_fd.c \
 				$(SRC_DIR)/ft_put/ft_putnbr_fd.c \
 				$(SRC_DIR)/ft_put/ft_putstr_fd.c \
 
-FTSTR_DIR = $(SRC_DIR)/ft_str/ft_split.c
+FTSTR_DIR = $(SRC_DIR)/ft_str/ft_split.c \
 				$(SRC_DIR)/ft_str/ft_strchr.c \
 				$(SRC_DIR)/ft_str/ft_strdup.c \
 				$(SRC_DIR)/ft_str/ft_striteri.c \
@@ -84,6 +85,7 @@ all: $(NAME)
 $(NAME): $(OBJS)
 			@$(AR) $@ $^
 
+#COMPILE OBJ FROM SRCS
 $(OBJS_DIR)%.o: $(SRC_DIR)%.c
 				@mkdir -p $(@D)
 				@$(CC) $(CFLAGS) -c $< -o $@
